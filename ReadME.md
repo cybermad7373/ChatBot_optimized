@@ -1,37 +1,72 @@
-# Rule-Based Chatbot
 
-This is a simple rule-based chatbot project implemented in Python. The chatbot uses a JSON file that contains a list of intents with associated patterns and responses. The chatbot matches user input with the defined patterns to select an appropriate response.
+# AI-Driven Chatbot for Simulated Police Investigations
 
-## Getting Started
+## Overview
+This project focuses on developing an AI-driven chatbot designed to assist in simulated police investigations. The chatbot processes natural language queries and provides context-aware responses using both provided and AI-generated situational data. This system aims to enhance decision-making and streamline information access in hypothetical law enforcement scenarios.
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+---
 
-### Prerequisites
+## Features
+- **Natural Language Understanding**: Processes user queries with accuracy.
+- **Context-Aware Responses**: Generates responses based on investigation-specific intents.
+- **AI-Generated Situational Data**: Simulates real-world scenarios for educational purposes.
+- **User-Friendly Interface**: Designed for easy interaction and query resolution.
 
-- Python 3.x
-- Required Python packages (can be installed using pip):
-    - numpy
-    - nltk
-    - Tensorflow
+---
 
-### Installing
+## Problem Statement
+Develop an AI-driven chatbot to assist in simulated police investigations by processing natural language queries and generating context-aware responses using provided and AI-generated situational data.
 
-1. Clone the repository or download the source code.
-2. Install the required packages using pip: 
-    - pip install numpy
-    - pip install nltk
-    - pip install Tensorflow
+---
 
-### Customization
+## Technologies Used
+- **Programming Language**: Python
+- **Frameworks**: TensorFlow, Flask
+- **Libraries**: NumPy, Pandas, scikit-learn, NLTK
+- **Tools**: Jupyter Notebook
+- **Data Source**: Provided and AI-generated situational data
 
-To customize the bot's responses, you can modify the Data.json file in the project directory. This file contains a list of predefined intents, each with a set of patterns and responses.
+---
 
-To add a new intent, simply add a new object to the intents list in the JSON file. The object should have the following structure:
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/cybermad7373/ChatBot_optimized.git
+   ```
+2. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Run the Jupyter Notebook to train the model:
+   ```bash
+   jupyter notebook chatbot.ipynb
+   ```
+4. Launch the chatbot interface (if applicable):
+   ```bash
+   python app.py  // under development
+   ```
 
-{
-    "tag": "<intent_tag>",
-    "patterns": ["<pattern_1>", "<pattern_2>", ...],
-    "responses": ["<response_1>", "<response_2>", ...]
-}
+---
 
-Replace <intent_tag> with a unique identifier for your intent, <pattern_1> and <pattern_2> with example phrases that the user might input to trigger the intent, and <response_1> and <response_2> with the bot's possible responses to the input.
+## Usage
+1. Open the chatbot interface or interact via the notebook.
+2. Enter queries related to simulated police investigations, such as:
+   - "Where was the suspect last seen?"
+   - "What evidence has been collected?"
+3. Receive context-aware and relevant responses.
+
+---
+
+## Data Disclaimer
+The data used in this project is provided and supplemented with AI-generated situational data. It is designed solely for experimental and educational purposes and does not represent real-world scenarios or cases.
+
+---
+
+## About the Author
+I am **Ruthravarshan S**, a final-year student of Artificial Intelligence and Data Science at K S Rangasamy College of Technology (KSRCT). My interests include Data Science, Machine Learning, and IoT, and I specialize in integrating AI into real-world applications to solve complex problems.
+
+---
+
+## Acknowledgements
+- **Edunet Foundation** for providing the support during this Internship.
+- AI frameworks and libraries used in this project for enabling efficient development.
